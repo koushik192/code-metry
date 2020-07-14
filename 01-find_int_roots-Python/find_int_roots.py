@@ -19,4 +19,6 @@ def fun_find_int_roots(a, b, c):
             s2=temp
 	return s1,s2
 
+print (fun_find_int_roots(1,-5,6))
+
 
