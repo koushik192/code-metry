@@ -9,7 +9,7 @@ def fun_isfactor(f, n):
         if(n==0):
             return False
         else:
-            re = (f%n)
+            re = (n%f)
         if(re == 0):
             return True
         else:
