@@ -5,7 +5,7 @@
 
 
 def fun_eggcartons(eggs):
-        nofc=(eggs)/(12)
+        nofc=(eggs)//(12)
         co=(nofc)%12
         if(co==0):
             return co
