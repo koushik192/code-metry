@@ -5,13 +5,7 @@
 # than crashing), and isevenpositiveint(123456) returns True.
 
 def isevenpositiveint(x):
-        if(x%2==0) & (x>0):
+        if(x%2==0)and(x>0)and(isinstance(x,int)or(isinstance(x,list))or(isinstance(x,tuple))==True):
             return True
-        elif(isinstance(x,int)==True):
-            return True
-        elif(isinstance(x,list)==True):
-            return False
-        elif(isinstance(x,tuple)==True):
-            return False
         else:
             return False
