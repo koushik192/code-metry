@@ -13,6 +13,5 @@ def isevenpositiveint(x):
             return False
         elif((isinstance(x,tuple)==True)):
             return False
-    	
         else:
             return False
