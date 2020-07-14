@@ -12,7 +12,7 @@ def fun_find_int_roots(a, b, c):
         s1=((-b-math.sqrt(d))/(2*a))
         s2=((-b+math.sqrt(d))/(2*a))
         if(s1>s2):
-            print("S1 is greater than S2")
+            return int(s1),int(s2)
         else:
             temp = s1
             s1=s2
