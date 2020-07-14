@@ -14,10 +14,7 @@ def fun_find_int_roots(a, b, c):
         if(s1>s2):
             return int(s1),int(s2)
         else:
-            temp = s1
-            s1=s2
-            s2=temp
-	return s1,s2
+            return int(s2),int(s1)
 
 print (fun_find_int_roots(1,-5,6))
 
