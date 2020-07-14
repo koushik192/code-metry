@@ -11,7 +11,12 @@ def fun_find_int_roots(a, b, c):
         d=((b**2)-(4*a*c))
         s1=((-b-cmath.sqrt(d)/(2*a)))
         s2=((-b+cmath.sqrt(d)/(2*a)))
-		
-	return 0, 0
+        if(s1>s2):
+    		print("S1 is greater than S2")
+        else:
+            temp = s1
+            s1=s2
+            s2=temp
+	return s1,s2
 
 
