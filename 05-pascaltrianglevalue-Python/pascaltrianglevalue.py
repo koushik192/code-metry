@@ -9,7 +9,7 @@
 
 import math
 def fun_pascaltrianglevalue(row, col):
-        if(row or col ==0):
+        if(row and col ==0):
             return None
         else:
-            return math.factorial(row)/(math.factorial(row-col)*math.factorial(col))
+            return int(math.factorial(row)/(math.factorial(row-col)*math.factorial(col)))
