@@ -4,5 +4,9 @@
 # m**2 == n), and False otherwise. Do not crash on non-ints nor on negative ints.
 import math
 def isperfectsquare(n):
-    return math.isqrt(n)**2==n
+    root=math.sqrt(n)
+    if((root-math.floor(root))==0):
+        return True
+    else:
+        return False
     		
