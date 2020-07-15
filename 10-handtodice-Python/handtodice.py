@@ -10,9 +10,9 @@ def handtodice(hand):
         s1=[]
         while(hand==0):
             k=hand%10
-            k1=k//10
+            hand=hand//10
         s=s.append(k1)
-        s1=s1.reverse(s)
+        s1=s.reverse()
         return s1
 
     			
