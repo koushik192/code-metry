@@ -15,7 +15,7 @@ def handtodice(hand):
         print(s)
     s.reverse()
     print(s)
-    return s1
+    return s
 
 handtodice(123)
 
