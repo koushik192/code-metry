@@ -13,8 +13,8 @@ def handtodice(hand):
         hand=hand//10
         s.append(k)
         print(s)
-    s1=s.reverse()
-    print(s1)
+    s.reverse()
+    print(s)
     return s1
 
 handtodice(123)
