@@ -14,6 +14,7 @@ def handtodice(hand):
         s.append(k)
         print(s)
     s1=s.reverse()
+    print(s1)
     return s1
 
 handtodice(123)
