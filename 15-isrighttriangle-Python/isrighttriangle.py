@@ -9,5 +9,8 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
         a = math.sqrt(((x2-x1)**2)+((y2-y1)**2))
         b = math.sqrt(((x3-x2)**2)+((y3-y2)**2))
         c = math.sqrt(((x3-x1)**2)+((y3-y1)**2))
-	# your code goes here
-	pass
+        if((a**2+b**2)==(c**2)):
+            return True
+        else:
+            return False
+    		
