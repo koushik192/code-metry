@@ -9,5 +9,5 @@ def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
         l2=((x2-x3)**2)+((y2-y3)**2)
         l3=((x3-x1)**2)+((y3-y1)**2)
         p = (l1+l2+l3)/2
-        ar =(p*(p-l1)*(p-l2)*(p-l3))**0.5
+        ar =float((p*(p-l1)*(p-l2)*(p-l3))**0.5)
         return ar
