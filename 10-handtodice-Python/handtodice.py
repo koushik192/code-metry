@@ -7,14 +7,13 @@
 
 def handtodice(hand):
     s=[]
-    s1=[]
     while(hand!=0):
         k=hand%10
         hand=hand//10
         s.append(k)
         print(s)
     s.reverse()
-    return s
+    return tuple(s)
 
 handtodice(123)
     			
