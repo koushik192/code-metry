@@ -7,4 +7,4 @@
 
 def fun_get_kth_digit(digit, k):
         digit=str(digit)
-        return int(digit[::-1][k])
+        return int(digit[::1][k])
