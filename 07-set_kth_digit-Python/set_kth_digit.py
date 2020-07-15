@@ -7,5 +7,10 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+        n = str(n)
+        for k in n:
+            if k in n:
+                n=str(d)
+        
+        return int(n)
 
