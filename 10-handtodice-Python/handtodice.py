@@ -15,7 +15,5 @@ def handtodice(hand):
     s.reverse()
     return s
 
-handtodice(123)
-
     			
    
