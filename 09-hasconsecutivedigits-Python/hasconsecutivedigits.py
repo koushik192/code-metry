@@ -7,11 +7,13 @@ def hasconsecutivedigits(n):
     s=abs(n)
     k=0
     m=[]
-    while(n!=0):
-        k=n%10
-        n//=10
+    while(s!=0):
+        k=s%10
+        s//=10
         m.append(k)
-    print(m[0])
+    for i in m:
+        if(m[i]>=m[i+1]):
+           return True
+        else:
+           return False
 
-
-hasconsecutivedigits(123)
