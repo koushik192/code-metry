@@ -8,12 +8,12 @@
 def digitcount(n):
     count =0
     if(n==0):
-        print(1)
+        return(1)
     else:
         count =0
         while(n!=0):
            n//=10
            count+=1
-        print(count)
+        return(count)
 
-digitcount(0)
+digitcount(12)
