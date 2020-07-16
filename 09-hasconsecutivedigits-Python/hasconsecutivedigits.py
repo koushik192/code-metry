@@ -3,7 +3,7 @@
 # number contains two consecutive digits that are the same, and False otherwise.
 
 def hasconsecutivedigits(n):
-    count =0  
+    count=0  
     s=abs(n)
     k=0
     m=[]
@@ -11,12 +11,7 @@ def hasconsecutivedigits(n):
         k=n%10
         n//=10
         m.append(k)
-    for q in m:
-        if(q==n):
-            count=count+1
-            if(count==2):
-                print(True)
-            else:
-                print(False)
+        print(m[0])
+
 
 hasconsecutivedigits(123)
