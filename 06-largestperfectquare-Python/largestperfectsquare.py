@@ -7,8 +7,10 @@
 # Hint: you may wish to use a similar approach to how you solved isPerfectSquare on the hw.
 # Another hint: This can be written using just one or two lines of Python.
 def largestperfectsquare(n):
+    s=[]
     for i in range(n):
         if(i**(0.5)==int(i**(0.5))):
-            print(i) 
+            s.append(i)
+            return s[-1]
 
-largestperfectsquare(25)
+largestperfectsquare(14)
