@@ -11,7 +11,7 @@ def hasconsecutivedigits(n):
         k=n%10
         n//=10
         m.append(k)
-        print(m[0])
+    print(m[0])
 
 
 hasconsecutivedigits(123)
