@@ -33,7 +33,7 @@ Asian City - Country"""
 locations ={'North America': {'USA': ['Mountain View']},'Asia':{'India':['Baglore']},'North America': {'USA': ['Atlanta']},'Africa': {'Egypt': ['Cairo']},'Asia': {'China': ['Shanghai']}}
 def sortUSA(dict):
     for values in locations:
-        print(locations.values())
+        print(locations.values()[0])
 
 
 sortUSA(locations)    
