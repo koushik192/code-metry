@@ -21,7 +21,6 @@ def ishappynumber(n):
         rem=n%10
         sum=sum+(rem*rem)
         n=n//10
-    return sum
     if(sum==1):
         return True
     else:
