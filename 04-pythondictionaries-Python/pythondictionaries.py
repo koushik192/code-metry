@@ -30,4 +30,8 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View']}}
+locations = {'North America': {'USA': ['Mountain View']}},{'Asia':{'India':['Banglore']}},{'North America':{'USA':['Atlanta']}},{'Africa':{'Egypt':['Cairo']}},{'Asia':{'China':['Shanghai']}}
+
+def sortUSA(dict):
+    for continents in locations:
+        print(continents)
