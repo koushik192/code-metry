@@ -11,6 +11,6 @@ def largestperfectsquare(n):
     for i in range(n):
         if(i**(0.5)==int(i**(0.5))):
             s.append(i)
-    print(s)
+    print(s[-1])
 
 largestperfectsquare(14)
