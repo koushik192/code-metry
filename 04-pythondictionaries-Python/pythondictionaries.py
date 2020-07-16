@@ -30,7 +30,7 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations ={'North America': {'USA': ['Mountain View']},'Asia':{'India':['Banglore']},'North America': {'USA': ['Atlanta']},'Africa': {'Egypt': ['Cairo']},'Asia': {'China': ['Shanghai']}}
+locations ={'North America': {'USA': ['Mountain View']},'Asia':{'India':['Banglore']},'North America': {'USA': ['Atlanta']},'Africa': {'Egypt': ['Cairo']},'ASia': {'China': ['Shanghai']}}
 
 print(locations.values())
 
