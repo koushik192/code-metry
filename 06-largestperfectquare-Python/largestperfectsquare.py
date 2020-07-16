@@ -8,6 +8,7 @@
 # Another hint: This can be written using just one or two lines of Python.
 def largestperfectsquare(n):
     for i in range(n):
-      print(i)
+        if(i**(0.5)==int(i**(0.5))):
+            print(i) 
 
-largestperfectsquare(24)
+largestperfectsquare(25)
