@@ -3,5 +3,8 @@
 # that occurs most frequently in it, with ties going to the smaller digit.
 
 def mostfrequentdigit(n):
-	# your code goes here
-	pass
+    s=str(n)
+    s1=[]
+    s2=n.split()
+    s1.append(s2)
+    print(s1)
