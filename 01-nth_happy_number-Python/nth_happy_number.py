@@ -14,7 +14,7 @@
 def fun_nth_happy_number(n):
     c=[]
     happy=[]
-    while(n!=1):
+    while(n>0):
         n=sum(int(i)**2 for i in str(n))
         if n in c:
             return False
@@ -23,7 +23,7 @@ def fun_nth_happy_number(n):
     for i in range(n):
         if fun_nth_happy_number(i):
             happy.append(i)
-            print( happy)
+        print(happy)
 
 fun_nth_happy_number(1)
         
