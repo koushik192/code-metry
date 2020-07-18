@@ -4,15 +4,13 @@
 # two matrices cannot be multiplied for any reason.
 
 
-def fun_matrixmultiply(m1, m2):
+def fun_matrixmultiply(L,M):
     try:
-        res=[]
+        l=[]
         for i in range(len(m1)):
-            l=[]
             for j in range(len(m1[0])):
-                l.append(m1[i][j]+m2[i][j])
-            res.append(l)
-        return res
+                l.append(abs(m1[i][j]+m2[i][j]))
+        return l
     except:
         return None
 
