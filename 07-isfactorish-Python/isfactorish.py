@@ -12,5 +12,19 @@
 
 
 def fun_isfactorish(n):
-	return False
+    k=[]
+    while(abs(n!=0)):
+        c=abs(n%10)
+        n=abs(n//10)
+        k.append(c)
+    print(k)
+    if len(k)<=3:
+        for i in k:
+            if (abs(n%i)==0):
+                pass
+        print(True)
+    else:
+        print(False)
+
+fun_isfactorish(-412)
 
