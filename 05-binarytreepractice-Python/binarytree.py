@@ -9,16 +9,19 @@ class BinaryTree(object):
         self.root = Node(root)
 
     def search(self, find_val):
-        if(self.root.value == find_val):
+        """Return True if the value
+        is in the tree, return
+        False otherwise."""
+        # Your code goes here
+        if(self.root.value==find_val):
             return True
-        if(self.root.left.value==None):
-            return False
-        if(self.root.left.value == find_val):
+        if(self.root.left.value==find_val):
             return True
-        if(self.root.right.value == find_val):
+        if(self.root.right.value==find_val):
             return True
         else:
             return False
+        pass
 
     def print_tree(self):
         """Print out all tree nodes
