@@ -19,15 +19,14 @@ def fun_isfactorish(n):
         n=abs(n//10)
         k.append(c)
     if len(k)<=3:
-        if i not in k ==0:
             for i in k:
                 try:
                     if (abs(n%i)==0):
                         pass
                 except:ZeroDivisionError
             return(True)
-        else:
-            return(False)
+    else:
+    	return(False)
 
 fun_isfactorish(412)
 
