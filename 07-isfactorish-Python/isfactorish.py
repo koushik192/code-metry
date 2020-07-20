@@ -25,9 +25,9 @@ def fun_isfactorish(n):
                     if (abs(n%i)==0):
                         pass
                 except:ZeroDivisionError
-            print(True)
+            return(True)
         else:
-            print(False)
+            return(False)
 
 fun_isfactorish(412)
 
