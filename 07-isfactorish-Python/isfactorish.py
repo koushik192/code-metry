@@ -12,22 +12,23 @@
 
 
 def fun_isfactorish(n):
-    k=[]
-    i=0
-    while(abs(n!=0)):
-        c=abs(n%10)
-        n=abs(n//10)
-        k.append(c)
-    if len(k)<=3:
-            for i in k:
-                try:
-                    if (abs(n%i)==0):
-                        pass
-                except:ZeroDivisionError
-            return(True)
+    k=str(n)
+    if(len(str(abs(n))))!=3:
+        return False
     else:
-    	return(False)
+        m=[]
+        n=str(abs(n))
+        for i in n:
+            m.append(i)
+            lst=list(map(int,m))
+        if len(lst)!=len(set(n)):
+            return False
+        for i in lst:
+            if(i==0):
+                return False
+            elif (int(n)%i!=0):
+                return False           
+        return True
 
-fun_isfactorish(412)
 
 
