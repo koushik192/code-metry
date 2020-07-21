@@ -15,9 +15,11 @@
 # c-de
 # -fgh""")
 
-
+import textwrap
 def fun_wordwrap(s, n):
-	return ""
+    k=textwrap.wrap(s,width=4)
+    print(k) 
 
+fun_wordwrap("hello kooushik",4)
 
  
