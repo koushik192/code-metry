@@ -8,11 +8,11 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
-def fun_recursion_onlyevendigits(l): 
+def fun_recursion_onlyevendigits(L): 
     return even(L,[],0)
 
 def even(L,a,i):
-    if len(L)==0:
+    if i==len(L):
         return a
     else:
         li=list(str(L[i]))
