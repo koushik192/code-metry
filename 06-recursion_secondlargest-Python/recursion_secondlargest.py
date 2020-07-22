@@ -18,11 +18,10 @@ def recursion_secondlargest(l):
 
 import heapq
 def secondl(l):
-    if l is None:
+    if len(l)==0 or len(l)==1:
         return None
     else:
         k=heapq.nlargest(2,l)
         return(k[1])
 
-secondl([1,2,3,4,5])
 
