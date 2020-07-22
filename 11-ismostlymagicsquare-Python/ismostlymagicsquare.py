@@ -23,9 +23,9 @@ def ismostlymagicsquare(a):
     smod=np.trace(ma)
     # print(smod)
     if (np.ravel(smor)[0]==smod and np.ravel(smoc)[0]==smod):
-        return(True)
+        return True
     else:
-        return(False)
+        return False
 
 
 ismostlymagicsquare([[2, 7, 6], [9, 5, 1], [4, 3, 8]])
