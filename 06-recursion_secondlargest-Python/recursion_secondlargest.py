@@ -13,6 +13,16 @@
 # Again, you do not need to sort the list. We didn't sort it in our sample solution. We just tracked the two largest 
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 
-def recursion_secondlargest(L):
-	# Your code goes here
-	pass
+def recursion_secondlargest(l):
+    return secondl(l)
+
+import heapq
+def secondl(l):
+    if l is None:
+        return None
+    else:
+        k=heapq.nlargest(2,l)
+        return(k[1])
+
+secondl([1,2,3,4,5])
+
