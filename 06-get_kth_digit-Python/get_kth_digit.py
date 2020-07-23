@@ -6,5 +6,8 @@
 
 
 def fun_get_kth_digit(digit, k):
-        digit=str(digit)
-        return int(digit[::-1][k])
+    digit=str(digit)[::-1]
+    if digit[k] in '0123456789':
+        return int(digit[k])
+    else:
+        return 0
