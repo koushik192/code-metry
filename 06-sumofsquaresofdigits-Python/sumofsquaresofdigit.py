@@ -6,4 +6,4 @@
 
 def sumofsquaresofdigit(n):
 	# Your code goes here
-	pass
+    return sum(int(n)**2 for n in str(n))
