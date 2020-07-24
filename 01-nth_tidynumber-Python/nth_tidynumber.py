@@ -9,15 +9,16 @@
 def fun_nth_tidynumber(n):
     k=[]
     prev =10000
-    while(n!=0):
-        rem=(n%10)
-        n=(n/10)
-        if (rem>prev):
-            return False
-        prev = rem
-    k.append(n)
-    print(k)
+    for i in range(n):
+        while(n!=0):
+            rem=(n%10)
+            n=(n/10)
+            if (rem>prev):
+                return False
+            prev = rem
+        k.append(n)
+        print(k)
     for i in k:
         print(i) 
 
-fun_nth_tidynumber(223)
+fun_nth_tidynumber(0)
