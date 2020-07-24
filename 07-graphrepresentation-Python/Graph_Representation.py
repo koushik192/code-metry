@@ -42,10 +42,12 @@ class Graph(object):
         return edge_list
 
     def get_adjacency_list(self):
+        max_index=0
         adjacency_list = [None] * (max_index + 1)
         return adjacency_list
     
     
     def get_adjacency_matrix(self):
+        max_index=0
         adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
         return adjacency_matrix
