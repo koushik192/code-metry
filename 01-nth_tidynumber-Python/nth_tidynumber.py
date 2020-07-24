@@ -5,20 +5,21 @@
 # fun_nth_tidynumber(5) = 6
 # fun_nth_tidynumber(15) = 17
 # fun_nth_tidynumber(35) = 46
+def istidy(n):
+    prev =10
+    while(n):
+        rem=(n%10)
+        n=(n//10)
+        if (rem>prev):
+            return False
+        prev = rem
+    return True
 
 def fun_nth_tidynumber(n):
     k=[]
-    prev =10000
-    for i in range(n):
-        while(n!=0):
-            rem=(n%10)
-            n=(n/10)
-            if (rem>prev):
-                return False
-            prev = rem
-        k.append(n)
-        print(k)
-    for i in k:
-        print(i) 
+    for i in range(1000):
+        if istidy(i)==True:
+            k.append(i)
+    print(i)
 
 fun_nth_tidynumber(0)
