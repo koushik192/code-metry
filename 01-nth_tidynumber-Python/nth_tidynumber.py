@@ -7,4 +7,17 @@
 # fun_nth_tidynumber(35) = 46
 
 def fun_nth_tidynumber(n):
-    return 0
+    k=[]
+    prev =10000
+    while(n):
+        rem=(n%10)
+        n=(n//10)
+        if (rem>prev):
+            return False
+        prev = rem
+        k.append(n)
+    
+    for i in k:
+        print(i) 
+
+fun_nth_tidynumber(5)
