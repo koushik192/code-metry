@@ -10,11 +10,11 @@ def istidy(n):
         return True
     else:
 
-        while(n!=0):
+        while(n):
             rem=(n%10)
-            n=(n/10)
+            n=(n//10)
             prev=n%10
-            if (rem>prev):
+            if (prev>rem):
                 return False
             prev = rem
         return True
