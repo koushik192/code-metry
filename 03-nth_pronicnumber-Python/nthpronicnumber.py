@@ -19,6 +19,6 @@ def nthpronicnumber(n):
         if ispronic(i):
             c=c+1
         i=i+1
-    print(i-1)
+    return(i-1)
 
 nthpronicnumber(1)
