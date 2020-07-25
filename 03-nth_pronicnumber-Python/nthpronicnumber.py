@@ -9,7 +9,7 @@ def ispronic(x):
         if(x==i*(i+1)):
             return True
         i=i+1
-	return False
+    return False
 	
     
 def nthpronicnumber(n):
