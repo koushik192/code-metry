@@ -11,6 +11,31 @@
 
 
 import math
+import math
+def karpekar(n):
+    i=1
+    while(i<=n):
+       i=i*10
+    return n==(n*n)//i+(n*n)%i
 
+def fun_nth_kaprekarnumber(n):
+    if n==0:
+       return 1
+    i=3
+    count=0
+    while(count<n):
+        if karpekar(i):
+            count=count+1
+        i=i+1
+    return i-1
 def fun_nearestkaprekarnumber(n):
-    return 1
+    k=[]
+    for i in range(21):
+        k.append(fun_nth_kaprekarnumber)
+    for i in range(len(k)-1):
+        if n>k[i] and n<k[i+1]:
+            if abs(n-k[1])<=abs(n-k[i+1]):
+                return k[i]
+            else:
+                return k[i+1]
+   
