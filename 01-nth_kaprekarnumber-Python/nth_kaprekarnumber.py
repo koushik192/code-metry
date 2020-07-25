@@ -8,6 +8,23 @@
 
 
 import math
+# def karpekar(n):
+#     i=1
+#     while(i<=n):
+#        i=i*10
+#     return n==(n*n)//i+(n*n)%i
+def karpekar(n):
+    l=1
+    while l<=n : l*=10
+    return n== (n*n)//l + (n*n)%l
 
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    if n==0:
+       return 1
+    i=3
+    count=0
+    while(count<n):
+        if karpekar(i):
+            count=count+1
+        i=i+1
+    return i-1
