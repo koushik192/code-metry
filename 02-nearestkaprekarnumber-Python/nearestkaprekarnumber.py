@@ -31,7 +31,7 @@ def fun_nth_kaprekarnumber(n):
 def fun_nearestkaprekarnumber(n):
     k=[]
     for i in range(21):
-        k.append(fun_nth_kaprekarnumber)
+        k.append(fun_nth_kaprekarnumber(i))
     for i in range(len(k)-1):
         if n>k[i] and n<k[i+1]:
             if abs(n-k[1])<=abs(n-k[i+1]):
