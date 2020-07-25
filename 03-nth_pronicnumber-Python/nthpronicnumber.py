@@ -5,7 +5,7 @@
 import math
 def ispronic(x):
     i=0
-    while(i<=(int)(math.sqrt)(x)):
+    while(i<=(math.sqrt)(x)):
         if(x==i*(i+1)):
             return True
         i=i+1
@@ -18,4 +18,4 @@ def nthpronicnumber(n):
     while(c<n):
         if ispronic(n):
             i=i+1
-	return i
+    return i
