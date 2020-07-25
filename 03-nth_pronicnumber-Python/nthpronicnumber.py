@@ -4,7 +4,7 @@
 # number n is a product of x and (x+1).
 import math
 def ispronic(x):
-    i=0
+    i=1
     while(i<=(int)(math.sqrt(x))):
         if(x==i*(i+1)):
             return True
@@ -17,5 +17,8 @@ def nthpronicnumber(n):
     c=0
     while(c<n):
         if ispronic(n):
+            c=c+1
             i=i+1
-    return i-1
+    print(i-1)
+
+nthpronicnumber(0)
