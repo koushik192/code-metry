@@ -4,11 +4,13 @@
 # 76 and 890625 are all automorphic numbers.
 
 def isautomorphic(x):
-    sq=str(x**2)
-    n=str(x)
-    if sq[len(sq)-len(n)==x]:
-        return True
-    return False
+    sq=x**2
+    while(x>0):
+        if(x%10!=sq%10):
+            return False
+        x=x//10
+        sq=sq//10
+    return True
 
 def nthautomorphicnumbers(n):
 	# Your code goes here
