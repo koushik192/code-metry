@@ -5,20 +5,17 @@
 def divide(a,b):
     while(a%b==0):
         a=a/b
-        return a
+    return a
 
 def ugly(n):
     n=divide(n,2)
     n=divide(n,3)
     n=divide(n,5)
-    if(n==1):
-        return 1
-    else:
-        return 0
+    return n==1
 def fun_nth_uglynumber(n):
     i=1
     c=1
-    while (n>=c):
+    while (c<=n):
         i=i+1
         if ugly(i):
             c=c+1
