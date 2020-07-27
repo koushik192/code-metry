@@ -10,4 +10,5 @@
 
 
 def fun_nth_carolprime(n):
-    return 0
+    k=0
+    return((2**k -1)**2 -2)
