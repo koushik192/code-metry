@@ -44,8 +44,8 @@ def nthpowerfulnumber(n):
         count=0
         i=1
         while(count<n):
-            if ispowerful(i):
+            if ispowerful(i) and get_primefactors(i):
                 count=count+1
             i=i+1
-        return i-1
-        pass
+    return i-1
+    pass
