@@ -9,6 +9,29 @@
 
 
 import math
+def isprime(x):
+    if x<=1:
+        return False
+    else:
+        for i in range(2,(x//2)+1):
+            if x%i==0:
+                return False
+        return True
+    
+def isprimeatruk(x):
+    if '0' in str(x):
+        return False
+    while (len(str(x))>1):
+        i=int(str(x)[1:])
+        if isprime(x)==False:
+            return False
+    return True
 
+        
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    i=2
+    while(n>=0):
+        if (len(str(i))>=1 and isprimeatruk(i)and isprime(i)):
+            n=n-1
+        i=i+1
+    return i-1
