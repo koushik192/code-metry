@@ -6,20 +6,13 @@
 # If there are two or more longest common substrings, return the lexicographically smaller one (ie, just use "<" to 
 # compare the strings). So, for example:
 # longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab"
-
+from difflib import SequenceMatcher
 def longestcommonsubstring(s1, s2):
     # Yourcode goes here
-    s=""
-    len1=len(s1)
-    len2=len(s2)
-    for i in range(len1):
-        match=""
-        for j in range(len2):
-            if(i+j<len1 and s1[i+j]==s2[j]):
-                match=match+s2[j] 
-            else:
-                if (len(match)>len(s)):s=match
-                match=""
-    return s
-           
-    pass
+    s=SequenceMatcher(None,s1,s2)
+    match=s.find_longest_match(0,len(s1),0,len(s2))
+    if(match.size!=0):
+        return (s1[match.a:match.a+match.size])
+    else:
+        return ""
+ 
