@@ -9,4 +9,19 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	pass
+    s=s.lower()
+    w=set(s)
+    d={}
+    for i in w:
+        if ord(i)>=65 and ord(i)<=122:
+            d[i]=s.count(i)
+    keys=list(d.keys())
+    vals=list(d.values())
+    k=[]
+    for i in range(len(vals)):
+        if vals[i]==min(vals):
+            k.append(keys[i])
+    k.sort()
+    return "".join(k).strip()
+
+    pass
