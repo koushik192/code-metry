@@ -3,8 +3,49 @@
 # 1, and nthPowerfulNumber(10) returns 64.
 # A number n is said to be Powerful Number if for every prime factor p of it, p2 also divides it. 
 # For example:- 36 is a powerful number. It is divisible by both 3 and square of 3 i.e, 9.
+def get_primefactors(n):
+    i=2
+    pf=[]
+    while i*i<=n:
+        if n%i==0:
+            pf.append(i)
+            n//=i
+        else:
+            i=i+1
+    if n>1:
+        pf.append(n)
+    return pf
 
+import math
+
+def ispowerful(n):
+    while(n%2==0):
+        power=0
+        while(n%2==0):
+            n=n//2
+            power=power+1
+        if(power==1):
+            return False
+    for factor in range(3,int(math.sqrt(n))+1,2):
+        power=0
+        while(n%factor==0):
+            n=n//factor
+            power=power+1
+    
+        if(power==1):
+            return False
+    return True
 
 def nthpowerfulnumber(n):
+    if n==0:
+        return 1
+    else:
 	# Your code goes here
-	pass
+        count=0
+        i=1
+        while(count<n):
+            if ispowerful(i):
+                count=count+1
+            i=i+1
+        return i-1
+        pass
