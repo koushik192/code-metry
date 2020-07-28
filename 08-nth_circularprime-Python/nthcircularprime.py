@@ -28,8 +28,6 @@ def nthcircularprime(n):
         sum=sum+digit
         i=i+1
     if (sum==n):
-        print(n)
-    else:
-        print('fail')
+        return(n)
 
 nthcircularprime(29)
